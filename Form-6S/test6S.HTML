@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Sample</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript"src="test6S.js"></script>
+
+
+   <style>
+      .slug {
+         text-align: center;
+         display: block;
+         background: #ffd966;
+         width: 100%;
+      }
+
+      .feature-outer {
+         align-items: end;
+         width: 100%;
+      }
+
+      .price {
+         background: #cfe2f3;
+      }
+
+      .Entry {
+         background: #f4cccc;
+      }
+
+      .feature-outer-left {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .Micros {
+         width: 25%;
+         align-self: end;
+      }
+
+      .feature-out {
+         width: 70%;
+      }
+
+      .feat-right {
+         width: 30%;
+         display: flex;
+      }
+
+      .feat-right .Micros {
+         width: 50%;
+      }
+
+      .bg-color {
+         padding: 20px 10px;
+         background-color: #ebebeb;
+      }
+
+      .acc-outer {
+         width: 30%;
+         margin: 0 auto;
+      }
+
+      .acc-outer .feature-outer-left {
+         flex-direction: column;
+         width: 40%;
+         flex-wrap: wrap;
+         display: inline-flex;
+         row-gap: 20px;
+      }
+
+      .acc-outer .Micros {
+         width: 100%;
+         text-align: left;
+      }
+
+      .acc-outer .Micros p {
+         margin-bottom: 0;
+      }
+
+      .second-part .Micros {
+         width: 100%;
+         align-self: end;
+         padding: 10px;
+      }
+
+      .second-part {
+         width: 25%;
+      }
+
+      .second-part-out {
+         display: flex;
+         column-gap: 30px;
+      }
+
+      .second-part p {
+         margin-bottom: 0;
+      }
+
+      .right {
+         text-align: right;
+      }
+
+      .center {
+         text-align: center;
+      }
+
+      .spacer {
+         height: 80px;
+      }
+
+      span.right-2 {
+         display: flex;
+         justify-content: flex-end;
+         column-gap: 30px;
+      }
+
+      @media only screen and (max-width: 480px) {
+         .feature-outer-left {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 33%;
+         }
+
+         .Micros {
+            width: 100%;
+         }
+
+         .feature-outer {
+            align-items: end;
+            width: 100%;
+            flex-direction: column;
+         }
+
+         .feature-out {
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+         }
+
+         .feat-right {
+            width: 100%;
+            display: flex;
+         }
+
+         .feat-right .Micros {
+            width: 100%;
+         }
+
+         .second-part-out {
+            display: flex;
+            column-gap: 30px;
+            flex-direction: column;
+         }
+
+         .second-part {
+            width: 100%;
+         }
+
+         .center {
+            text-align: left;
+         }
+
+         .acc-outer {
+            width: 96%;
+            margin: 0 auto;
+         }
+
+         .acc_outer input {
+            width: 100%;
+         }
+
+         .acc_outer {
+            width: 50%;
+         }
+
+         .spacer {
+            height: 0px;
+         }
+      }
+   </style>
+</head>
+
+<body>
+    <div class="container">
+      <div class="row">
+         <div class="feature-outer d-flex">
+            <div class="feature-out ">
+               <div class="feature-outer-left ">
+                  <div class="Micros">
+                     <p><b>Futures/Micros</b></p>
+                  </div>
+                  <div class="Micros">
+                     <p><b>Tick Size</b></p>
+                  </div>
+                  <div class="Micros">
+                     <p><b>Tick Value</b></p>
+                  </div>
+                  <div class="Micros">
+                     <p><b>Point Value</b></p>
+                  </div>
+               </div>
+
+               <div class="feature-outer-left ">
+                  <div class="Micros">
+                     <p>6A</p>
+                  </div>
+                  <div class="Micros">
+                     <p>0.00005
+                        
+                     </p>
+                  </div>
+                  <div class="Micros">
+                     <p>5.00
+                        
+                     </p>
+                  </div>
+                  <div class="Micros">
+                     <p>100000.00
+                        
+                     </p>
+                  </div>
+               </div>
+
+               <div class="feature-outer-left ">
+                  <div class="Micros">
+                     <!-- <p>MYM</p> -->
+                  </div>
+                  <div class="Micros">
+                     <!-- <p>1.00
+                        
+                     </p> -->
+                  </div>
+                  <div class="Micros">
+                     <!-- <p>0.50
+                        
+                     </p> -->
+                  </div>
+                  <div class="Micros">
+                     <!-- <p>0.50
+                        
+                     </p> -->
+                  </div>
+               </div>
+
+            </div>
+            <div class="feat-right ">
+
+               <div class="Micros">
+                  <!-- <p><b>Icebergs Threshold</b></p> -->
+                  <p><b>Stops Threshold</b></p>
+
+               </div>
+               <div class="Micros">
+                  <!-- <p>150
+                     
+                  </p> -->
+                  <p>TBD
+                     
+                  </p>
+
+               </div>
+            </div>
+         </div>
+
+
+         <div class="feature-out acc_outer_1 w-100 pt-5">
+            <div class="feature-outer-left acc_outer">
+               <div class="Micros">
+                  <p><b>ATR - Select Actual ATR or ATR Ticks in dropdown Used for both ATR reversion and Position trades
+                     </b></p>
+               </div>
+               <div class="Micros">
+                  <p><b></b></p>
+               </div>
+               <div class="Micros">
+                  <p><b>Enter Zone top price</b></p>
+               </div>
+               <div class="Micros">
+                  <p><b>Enter Zone bottom price</b></p>
+               </div>
+            </div>
+
+            <div class="feature-outer-left acc_outer bg-color ">
+               <div class="Micros">
+                  <p class="mb-0">
+                     <select name="select" class="selectmain">
+                        <option value="ATRActual">ATR-Actual</option>
+                        <option value="ATRTicks">ATR-Ticks</option>
+
+                     </select>
+                  </p>
+               </div>
+               <div class="Micros">
+                  <p class="mb-0"><input type="text" class="textbox1" placeholder="Enter Value"></p>
+               </div>
+               <div class="Micros">
+                  <p class="mb-0"><input type="text" class="textbox2" placeholder="Zone Top price"></p>
+               </div>
+               <div class="Micros">
+                  <p class="mb-0"><input type="text" class="textbox3" placeholder="Zont Bottom Price"></p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+
+
+   <div class="container">
+      <div class="row">
+         <b class="slug">POSITION STRATEGIES (SLUG, IZZY, LICK, BARF, DADA, HEAVY AL)</b>
+
+         <div class="acc-outer pt-3">
+            <div class="feature-outer-left ">
+               <div class="Micros">
+                  <p><b>Acct Size</b></p>
+               </div>
+               <div class="Micros ">
+                  <p><b>Max loss%</b></p>
+               </div>
+               <div class="Micros">
+                  <p><b>Risk</b></p>
+               </div>
+
+            </div>
+            <div class="feature-outer-left ">
+               <div class="Micros">
+                  <p class="mb-0"><input type="text" class="acctsize"></p>
+               </div>
+               <div class="Micros">
+                  <p class="mb-0"><input type="text" class="maxloss"></p>
+               </div>
+               <div class="Micros">
+                  <p class="riskval">0</p>
+               </div>
+            </div>
+
+         </div>
+
+
+         <div class="feature-outer d-flex">
+
+            <div class="second-part-out w-100">
+               <div class="second-part ">
+                  <div class="Micros">
+                     <p><b>Position Strategy</b></p>
+                  </div>
+
+                  <div class="Micros">
+                     <p>Entry/Stop</p>
+                     <p class="right entryval">0</p>
+                  </div>
+
+                  <div class="spacer">
+
+                  </div>
+                  <div class="spacer">
+
+                  </div>
+                  <div class="Micros ">
+                     <p>ATR Retest Price</p>
+
+                     <p>0</p>
+                     <p class="right retest">0</p>
+                  </div>
+               </div>
+
+               <div class="second-part">
+                  <div class="Micros price">
+                     <p><b>LONG</b></p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Entry price</b>
+                     <p class="right entryprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Stop Order Price</b>
+                     <p class="right stopprice">0</p>
+                     </p>
+                  </div>
+
+                  <div class="Micros price">
+                     <p><b>1ATR Validation Price</b>
+                     <p class="right validationprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>ATR Retest Price</b>
+                     <p class="right retestprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>LONG Invalidation Price</b>
+                     <p class="right invalidprice">0</p>
+                     </p>
+                  </div>
+               </div>
+
+
+
+
+
+
+               <div class="second-part risk-part">
+                  <div class="Micros ">
+                     <p><b>Select Risk in Point or Ticks</b></p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center"><b>
+                           <select name="select" class="selectrisk">
+                              <option value="riskpoint">Risk in Points</option>
+                              <option value="riskticks">Risk in Ticks</option>
+                           </select>
+                        </b>
+                     <p class="center riskpoints">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center"><b>6A Contracts</b>
+                     <p class="center nqcontracts">0</p>
+                     </p>
+                  </div>
+
+                  <div class="Micros ">
+                     <!-- <p class="center"><b>MYM Contracts</b> -->
+                     <!-- <p class="center mnqcontracts">0</p> -->
+                     </p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center"><b>
+                           <!-- <select name="select" class="selectshort">
+                              <option value="longtarget">Long-Target</option>
+                              <option value="shorttarget">Short-Target</option>
+                           </select> -->
+                        </b>
+                     <p>
+                        <!-- <input type="text" placehodler="Enter Short Target" class="center shorttarget" value="0"> -->
+                     </p>
+                     </p>
+                  </div>
+                  <div class="Micros">
+                     <!-- <p class="center"><b>Risk/Reward</b> -->
+                     <!-- <p class="center riskreward">0</p> -->
+                     <!-- </p> -->
+                  </div>
+               </div>
+
+
+               <div class="second-part">
+                  <div class="Micros Entry">
+                     <p><b>SHORT</b></p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Entry price</b>
+                     <p class="right rightentryprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Stop Order Price</b>
+                     <p class="right rightstoporderprice">0</p>
+                     </p>
+                  </div>
+
+                  <div class="Micros Entry">
+                     <p><b>1ATR Validation Price</b>
+                     <p class="right rightvalidprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>ATR Retest Price</b>
+                     <p class="right rightretest">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>SHORT Invalidation Price</b>
+                     <p class="right rightinvalid">0</p>
+                     </p>
+                  </div>
+               </div>
+
+
+
+            </div>
+
+
+
+
+
+
+         </div>
+      </div>
+
+   </div>
+
+
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <b class="slug">ATR REVERSION STRATEGY</b>
+         <div class="acc-outer pt-3">
+            <b class="d-block">ATR REVERSION STRATEGY RISK CALCULATOR </b>
+            <div class="feature-outer-left ">
+               <div class="Micros">
+                  <p><b>Acct Size</b></p>
+               </div>
+               <div class="Micros ">
+                  <p><b>Max loss%</b></p>
+               </div>
+               <div class="Micros">
+                  <p><b>Risk</b></p>
+               </div>
+            </div>
+            <div class="feature-outer-left ">
+               <div class="Micros">
+                  <p class="mb-0"><input type="string" class="acctsize2"></p>
+               </div>
+               <div class="Micros">
+                  <p class="mb-0"><input type="string" class="maxloss2"></p>
+               </div>
+               <div class="Micros">
+                  <p class="riskval2"></p>
+               </div>
+            </div>
+         </div>
+         <div class="feature-outer  d-flex">
+            <div class="second-part-out w-100">
+               <div class="second-part ">
+                  <div class="Micros">
+                     <p><b>1 ATR Strategy</b></p>
+                  </div>
+                  <div class="Micros">
+                     <p>Entry</p>
+                     <p class="right atr1entryval1">0</p>
+                  </div>
+                  <div class="Micros">
+                     <p>Stop</p>
+                     <span class="right-2">
+                        <p class="right">0</p>
+                        <p class="right atr1entryval2">0</p>
+                     </span>
+                  </div>
+                  <div class="spacer">
+                  </div>
+                  <div class="Micros ">
+                     <p>Exit</p>
+                     <span class="right-2">
+                        <p class="right">0</p>
+                        <p class="right atr1entryval3">0</p>
+                     </span>
+                  </div>
+               </div>
+               <div class="second-part">
+                  <div class="Micros Entry">
+                     <p><b>1 ATR-SHORT</b></p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Entry price</b>
+                     <p class="right atr1shortentryprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Stop Order Price</b>
+                     <p class="right atr1shortstopprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Exit Price</b>
+                     <p class="right atr1shortexitprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>SHORT Invalidation Price</b>
+                     <p class="right invalidprice">0</p>
+                     </p>
+                  </div>
+               </div>
+               <div class="second-part risk-part">
+                  <div class="Micros ">
+                     <p><b>Select Risk in Point or Ticks</b></p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center"><b>
+                           <select name="select" class="atr1selectrisk">
+                              <option value="riskpoint">Risk in Points</option>
+                              <option value="riskticks">Risk in Ticks</option>
+                           </select>
+                        </b>
+                     <p class="center atr1riskpoints">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center"><b>6A Contracts</b>
+                     <p class="center atr1escontracts">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros ">
+                     <!-- <p class="center"><b>MYM Contracts</b>
+                     <p class="center atr1mescontracts">0</p>
+                     </p> -->
+                  </div>
+                  <div class="Micros">
+                     <!-- <p class="center"><b>Risk/Reward</b> -->
+                     <!-- <p class="center atr1riskreward">0</p> -->
+                     <!-- </p> -->
+                  </div>
+               </div>
+               <div class="second-part">
+                  <div class="Micros price">
+                     <p><b>1 ATR Strategy-LONG</b></p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Entry price</b>
+                     <p class="right rightatr1entryprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Stop Order Price</b>
+                     <p class="right rightatr1stoporderprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Exit Price</b>
+                     <p class="right rightart1existprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>LONG Invalidation Price</b>
+                     <p class="right rightinvalid">0</p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="feature-outer  d-flex">
+            <div class="second-part-out w-100">
+               <div class="second-part ">
+                  <div class="Micros">
+                     <p><b>2 ATR Strategy</b></p>
+                  </div>
+                  <div class="Micros">
+                     <p>Entry</p>
+                     <p class="right atr2entryval1">0</p>
+                  </div>
+                  <div class="Micros">
+                     <p>Stop</p>
+                     <span class="right-2">
+                        <p class="right">0</p>
+                        <p class="atr2entryval2">0</p>
+                     </span>
+                  </div>
+                  <div class="spacer">
+                  </div>
+                  <div class="Micros ">
+                     <p>Exit</p>
+                     <span class="right-2">
+                        <p class="right">0</p>
+                        <p class="right atr2entryval3">0</p>
+                     </span>
+                  </div>
+               </div>
+               <div class="second-part">
+                  <div class="Micros Entry">
+                     <p><b>2 ATR-SHORT</b></p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Entry price</b>
+                     <p class="right atr2shortentryprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Stop Order Price</b>
+                     <p class="right atr2shortstopprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Exit Price</b>
+                     <p class="right atr2shortexitprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>SHORT Invalidation Price</b>
+                     <p class="right invalidprice">0</p>
+                     </p>
+                  </div>
+               </div>
+               <div class="second-part risk-part">
+                  <div class="Micros ">
+                     <p><b>Select Risk in Point or Ticks</b></p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center"><b>
+                           <select name="select" class="atr2selectrisk">
+                              <option value="riskpoint">Risk in Points</option>
+                              <option value="riskticks">Risk in Ticks</option>
+                           </select>
+                        </b>
+                     <p class="center atr2riskpoints">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center"><b>6A Contracts</b>
+                     <p class="center atr2escontracts">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros ">
+                     <!-- <p class="center"><b>MYM Contracts</b>
+                     <p class="center atr2mescontracts">0</p>
+                     </p> -->
+                  </div>
+                  <div class="Micros">
+                     <!-- <p class="center"><b>Risk/Reward</b> -->
+                     <!-- <p class="center atr2riskreward">0</p> -->
+                     <!-- </p> -->
+                  </div>
+               </div>
+               <div class="second-part">
+                  <div class="Micros price">
+                     <p><b>2 ATR Strategy-LONG</b></p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Entry price</b>
+                     <p class="right rightatr2entryprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Stop Order Price</b>
+                     <p class="right rightatr2stoporderprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Exit Price</b>
+                     <p class="right rightart2existprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>LONG Invalidation Price</b>
+                     <p class="right rightinvalid">0</p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="feature-outer  d-flex">
+            <div class="second-part-out w-100">
+               <div class="second-part ">
+                  <div class="Micros">
+                     <p><b>3 ATR Strategy</b></p>
+                  </div>
+                  <div class="Micros">
+                     <p>Entry</p>
+                     <p class="right atr3entryval1">0</p>
+                  </div>
+                  <div class="Micros">
+                     <p>Stop</p>
+                     <span class="right-2">
+                        <p class="right">0</p>
+                        <p class="right atr3entryval2">0</p>
+                     </span>
+                  </div>
+                  <div class="spacer">
+                  </div>
+                  <div class="Micros ">
+                     <p>Exit</p>
+                     <span class="right-2">
+                        <p class="right">0</p>
+                        <p class="right atr3entryval3">0</p>
+                     </span>
+                  </div>
+               </div>
+               <div class="second-part">
+                  <div class="Micros Entry">
+                     <p><b>3 ATR-SHORT</b></p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Entry price</b>
+                     <p class="right atr3shortentryprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Stop Order Price</b>
+                     <p class="right atr3shortstopprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>Exit Price</b>
+                     <p class="right atr3shortexitprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros Entry">
+                     <p><b>SHORT Invalidation Price</b>
+                     <p class="right invalidprice">0</p>
+                     </p>
+                  </div>
+               </div>
+               <div class="second-part risk-part">
+                  <div class="Micros ">
+                     <p><b>Select Risk in Point or Ticks</b></p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center"><b>
+                           <select name="select" class="atr3selectrisk">
+                              <option value="riskpoint">Risk in Points</option>
+                              <option value="riskticks">Risk in Ticks</option>
+                           </select>
+                        </b>
+                     <p class="center  atr3riskpoints">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros ">
+                     <p class="center "><b>6A Contracts</b>
+                     <p class="center atr3escontracts">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros ">
+                     <!-- <p class="center"><b>MYM Contracts</b>
+                     <p class="center atr3mescontracts">0</p>
+                     </p> -->
+                  </div>
+                  <div class="Micros">
+                     <!-- <p class="center"><b>Risk/Reward</b> -->
+                     <!-- <p class="center atr3riskreward">0</p> -->
+                     <!-- </p> -->
+                  </div>
+               </div>
+               <div class="second-part">
+                  <div class="Micros price">
+                     <p><b>3 ATR Strategy-LONG</b></p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Entry price</b>
+                     <p class="right rightatr3entryprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Stop Order Price</b>
+                     <p class="right rightatr3stoporderprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>Exit Price</b>
+                     <p class="right rightart3existprice">0</p>
+                     </p>
+                  </div>
+                  <div class="Micros price">
+                     <p><b>LONG Invalidation Price</b>
+                     <p class="right rightinvalid">0</p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/js.geotools/dist/geotools.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/js.geotools/dist/geotools-swedish-zipcodes.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+   
+</body>
+
+</html>
